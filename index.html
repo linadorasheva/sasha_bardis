@@ -3,42 +3,48 @@
 <head>
   <meta charset="utf-8">
   <title>sashabardis - art&nude photographer</title>
-  <link rel="stylesheet" href="css/style/css">
+  <link rel="stylesheet" href="css/style.css">
+<!--   <link href="https://fonts.googleapis.com/css?family=Linden+Hill|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> -->
+ <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header container">
     <nav class="main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="gallery.html">My works</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="gallery.html">Works</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="bio.html">Bio</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="price.html">Price&Terms</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="price.html">Price & Terms</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Contacts</a></li>
       </ul>
-      <button class="main-nav__open" type="button">menu</button>
+      <button class="main-nav__btn" type="button">menu</button>
       <a class="main-nav__social" href="https://www.instagram.com/sashabardis/">instagram</a>
     </nav>
   </header>
   <main>
-    <aside class="aside">
-      <button class="aside__arrow aside__arrow--prev" type="button">prev</button>
-      <button class="aside__arrow aside__arrow--next" type="button">next</button>
-      <button class="aside__all" type="button">gallery</button>
-    </aside>
-    <section class="promo">
+    <section class="promo container">
+      <aside class="aside ">
+        <button class="aside__arrow aside__arrow--up" type="button">prev</button>
+        <button class="aside__arrow aside__arrow--down" type="button">next</button>
+        <button class="aside__all" type="button">gallery</button>
+      </aside>
       <div class="promo__wrapper">
         <h1 class="promo__title">Sasha Bardis</h1>
         <span class="promo__subtitle">Art & Nude Photographer</span>
       </div>
       <div class="promo__photo">
-        <img class="promo__img promo__img--left" src="img/photo1.jpg">
-        <img class="promo__img promo__img--right" src="img/photo2.jpg">
+        <div class="promo__photo-wrapper promo__photo-wrapper--left">
+          <img class="promo__img promo__img--left" src="img/photo-3.jpg" >
+        </div>
+        <div class="promo__photo-wrapper promo__photo-wrapper--right">
+          <img class="promo__img promo__img--right" src="img/photo-3.jpg">
+        </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <p class="copyright">
       created by</br>
-      ©<a href="http://linadorasheva.ru/">linadorasheva</a>, 2019
+      © <a class="copyright__link" href="http://linadorasheva.ru/" target="_blank">linadorasheva</a>, 2019
     </p>
   </footer>
 </body>
