@@ -10,9 +10,23 @@
   line-height: 16px;
 }
 .copyright__link  {
+  position: relative;
   font-family: 'Open Sans', serif;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
   color: #000000;
+}
+
+.copyright__link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+}
+.copyright:hover .copyright__link::before {
+  width: 100%;
+  transition-duration: 350ms;
 }
