@@ -11,3 +11,21 @@ body {
   margin: 0;
   padding: 0;
 }
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 10px;
+  background-color: #000000;
+}
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 400px;
+  background-color: #000000;
+}
