@@ -16,6 +16,10 @@
   display: block;
   object-fit: cover;
 
+  animation: visible;
+  animation-timing-function: ease-in-out;
+  animation-duration: 900ms;
+
 
   &--1 {
     width: 860px;
@@ -46,11 +50,16 @@
     box-shadow: -10px 0 20px 0px #888;
   }
 }
+.gallery__img:hover {
+  filter: brightness(85%);
+  transition-duration: 400ms;
+}
+
 
 // ссылка для перехода на все фото- блок1
 .gallery__arrow--1 {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
   padding-right: 90px;
 
@@ -62,6 +71,7 @@
   font-variant: small-caps;
   color: #000000;
   text-decoration: none;
+  z-index: 9999;
 }
 
 .gallery__arrow--1::after {

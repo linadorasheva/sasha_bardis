@@ -1,12 +1,34 @@
 .container {
-  width: 1700px;
+  width: 361px;
   margin: 0 auto;
-  padding: 0 110px;
+  padding: 0 7px;
+}
 
-  &--portfolio {
-    width: 1920px;
+@media (min-width: 1366px) {
+  .container {
+    width: 1300px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 33px;
 
+    &--portfolio {
+      width: 1366px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: 1700px;
+    margin: 0 auto;
+    padding: 0 110px;
+
+    &--portfolio {
+      width: 1920px;
+      margin: 0 auto;
+      padding: 0;
+
+    }
   }
 }
