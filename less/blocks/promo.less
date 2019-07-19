@@ -1,3 +1,117 @@
+.promo {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+//заголовок
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 320px;
+  margin: 0 auto;
+
+  margin-bottom: 30px;
+  transform: translateY(0px);
+
+  animation-name: textUp;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1500ms;
+}
+
+//заголовок-анимация
+
+@keyframes textUp {
+  0% {
+      opacity: 0.1;
+      transform: translateY(200px);
+
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+      transition-delay: 950ms;
+
+  }
+}
+.promo__title {
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  font-variant: small-caps;
+}
+
+.promo__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+// фото
+.promo__photo {
+  position: relative;
+}
+
+.promo__photo-wrapper {
+  display: flex;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  &--left {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--right {
+    display: none;
+  }
+}
+
+.promo__img {
+  display: block;
+  flex-shrink: 0;
+  border: none;
+  object-fit: cover;
+  animation: visible;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1000ms;
+
+  &--left {
+    width: 100%;
+    height: 100%;
+    transition-duration: 1000ms;
+  }
+
+  &--right {
+    display: none;
+  }
+}
+
+// фото-анимация(используется также на странице портфолио)
+@keyframes visible {
+  0% {
+    transform: translateX(600px);
+  }
+  100% {
+      transform: translateX(0px);
+  }
+}
+
+
 @media (min-width: 1366px) {
   .promo {
     display: grid;
@@ -5,6 +119,7 @@
     grid-template-rows: 150px auto;
   }
 
+//заголовок
   .promo__wrapper {
     grid-column-start: 2;
     grid-column-end: -1;
@@ -13,6 +128,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: auto;
+    margin: 0;
+
     margin-bottom: 30px;
     transform: translateY(0px);
 
@@ -21,6 +139,7 @@
     animation-duration: 1500ms;
   }
 
+//заголовок-анимация
   @keyframes up {
     0% {
         opacity: 0.1;
@@ -55,8 +174,10 @@
     line-height: 28px;
     font-weight: 400;
     letter-spacing: 0.05em;
+    text-align: unset;
   }
 
+// фото
   .promo__photo {
     grid-column-start: 2;
     grid-column-end: -1;
@@ -137,6 +258,7 @@
     }
   }
 
+// фото-анимация
   @keyframes visible {
     0% {
       transform: translateX(600px);
@@ -154,6 +276,7 @@
     grid-template-rows: 260px auto;
   }
 
+// заголовок
   .promo__wrapper {
     grid-column-start: 2;
     grid-column-end: -1;
@@ -171,6 +294,7 @@
     animation-duration: 1000ms;
   }
 
+// заголовок-анимация
   @keyframes up {
     0% {
         opacity: 0.1;
@@ -202,8 +326,10 @@
     line-height: 32px;
     font-weight: 400;
     letter-spacing: 0.05em;
+    text-align: unset;
   }
 
+// фото
   .promo__photo {
     grid-column-start: 2;
     grid-column-end: -1;
@@ -286,6 +412,7 @@
     }
   }
 
+// фото-анимация
   @keyframes visible {
     0% {
       transform: translateX(600px);

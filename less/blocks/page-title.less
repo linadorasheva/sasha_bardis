@@ -2,21 +2,26 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 80px;
 }
 
 .page-title__link {
   display: block;
+  width: max-content;
   text-decoration: none;
   color: #000000;
 }
 
 .page-title__title {
   margin: 0;
+  margin-top: 50px;
+  margin-bottom: 10px;
   padding: 0;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 38px;
-  line-height: 40px;
+  font-size: 34px;
+  line-height: 36px;
   font-weight: 500;
   letter-spacing: 0.3em;
   font-variant: small-caps;
@@ -24,13 +29,92 @@
 
 .page-title__subtitle {
   margin: 0;
-  margin-left: 305px;
   padding: 0;
-  // font-family: 'Linden Hill', serif;
   font-family: 'Cormorant Garamond', serif;
-
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 22px;
   font-weight: 400;
   letter-spacing: 0.05em;
+  text-align: center;
+}
+
+@media (min-width: 1366px) {
+  .page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+    margin: 0;
+    margin-bottom: 80px;
+  }
+
+  .page-title__link {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .page-title__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    font-variant: small-caps;
+  }
+
+  .page-title__subtitle {
+    margin: 0;
+    margin-left: 305px;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-align: unset;
+  }
+}
+
+@media (min-width: 1920px) {
+  .page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+    margin: 0;
+    margin-bottom: 80px;
+  }
+
+  .page-title__link {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .page-title__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    font-variant: small-caps;
+  }
+
+  .page-title__subtitle {
+    margin: 0;
+    margin-left: 305px;
+    padding: 0;
+    // font-family: 'Linden Hill', serif;
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
 }

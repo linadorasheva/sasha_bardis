@@ -1,7 +1,19 @@
 .page-footer {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
   height: 75px;
 }
+
+@media (min-width: 1366px) {
+  .page-footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    &--portfolio {
+      position: static;
+      height: auto;
+      padding: 50px 0 10px 0;
+    }
+  }
+}
+
