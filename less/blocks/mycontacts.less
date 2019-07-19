@@ -1,0 +1,37 @@
+.mycontacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.mycontacts__title {
+  margin: 0;
+  margin-bottom: 10%;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+@media (min-width: 1366px) {
+  .mycontacts {
+    display: grid;
+    grid-template-columns: 600px auto;
+    grid-template-rows: 380px auto;
+    grid-column-gap: 80px;
+  }
+
+  .mycontacts__title {
+    margin: 0;
+    margin-bottom: 10%;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}

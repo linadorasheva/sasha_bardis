@@ -4,17 +4,16 @@
   <meta charset="utf-8">
   <title>Sasha Bardis Photography</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Linden+Hill|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600|Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header page-header--portfolio container">
+  <header class="page-header page-header--portfolio">
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link" href="index.html">Home</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="portfolio.html">Portfolio</a></li>
         <!-- <li class="main-nav__item"><a class="main-nav__link" href="bio.html">Bio</a></li> -->
         <li class="main-nav__item"><a class="main-nav__link" href="price.html">Price & Terms</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Contacts</a></li>
       </ul>
       <button class="main-nav__btn-wrapper" type="button">
         <span class="main-nav__btn">menu</span>
@@ -23,10 +22,60 @@
     </nav>
   </header>
   <main>
-
+    <section class="page-title container">
+      <a class="page-title__link" href="index.html">
+        <h1 class="page-title__title">Sasha Bardis</h1>
+      </a>
+      <span class="page-title__subtitle">Art & Nude Photographer</span>
+    </section>
+    <section class="mycontacts container container--contacts">
+      <form class="form">
+        <h2 class="mycontacts__title">Заказать съёмку</h2>
+        <div class="form__wrapper">
+          <label class="form__label" for="city">Город</label>
+          <input class="form__input" type="text" name="city" id="city" required>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="name">Имя</label>
+          <input class="form__input" type="text" name="name" id="name" required>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="phone">Телефон</label>
+          <input class="form__input" type="tel" pattern="^((8|\+7|7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$" name="phone" id="phone" required>
+          <!-- телефон в формате 8/7/+71234567890, пробел после кода страны -->
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="textarea">Ваш комментарий</label>
+          <textarea class="form__textarea" placeholder="Хочу съёмку в студии" id="textarea"></textarea>
+        </div>
+        <input class="form__btn" type="submit" name="send" value="отправить" disabled>
+        <p class="form__personal">* Нажимая кнопку отправить, Вы даете <a class="form__personal-link" href="#" target="_blank">согласие на обработку своих персональных данных.</a></p>
+      </form>
+      <article class="location">
+        <h2 class="mycontacts__title">Location</h2>
+        <ul class="location__list">
+          <li class="location__item">Москва</li>
+          <li class="location__item">Санкт-Петербург</li>
+        </ul>
+      </article>
+      <article class="social">
+        <h2 class="mycontacts__title">Связаться со мной</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--inst" href="https://www.instagram.com/sashabardis/" area-label="Instagram" target="_blank" title="мой инстаграм">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/sashabardis" area-label="ВКонтакте" target="_blank" title="моя страница ВКонтакте">ВКонтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--mail" href="mailto:bardisjoel@gmail.com" area-label="Email" title="электронная почта">bardisjoel@gmail.com</a>
+          </li>
+        </ul>
+      </article>
+    </section>
   </main>
-  <footer class="page-footer">
-    <p class="copyright">
+  <footer class="page-footer page-footer--portfolio container--portfolio">
+    <p class="copyright copyright--contacts">
       created by</br>
       © <a class="copyright__link" href="http://linadorasheva.ru/" target="_blank">linadorasheva</a>, 2019
     </p>
