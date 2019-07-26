@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=divice-width, initial-scale=1">
+  <title>Sasha Bardis Photography</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600|Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header page-header--portfolio">
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Home</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="portfolio.html">Portfolio</a></li>
+        <!-- <li class="main-nav__item"><a class="main-nav__link" href="bio.html">Bio</a></li> -->
+        <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Contacts</a></li>
+      </ul>
+      <button class="main-nav__btn-wrapper" type="button">
+        <span class="main-nav__btn">menu</span>
+      </button>
+      <a class="main-nav__social" href="https://www.instagram.com/sashabardis/" target="_blank">instagram</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-title container">
+      <a class="page-title__link" href="index.html">
+        <h1 class="page-title__title">Sasha Bardis</h1>
+      </a>
+      <span class="page-title__subtitle">Art & Nude Photographer</span>
+    </section>
+    <section class="price container">
+      <h2 class="price__title">Стоимость фотосессии</h2>
+      <div class="price__wrapper">
+        <article class="description">
+          <h3 class="description__title">Часовая съёмка - 7 000 руб.</h3>
+          <ul class="description__list">
+            <li class="description__item">80 фото в цветокоррекции</li>
+            <li class="description__item">12 фото в ретуши</li>
+          </ul>
+        </article>
+        <article class="description">
+          <h3 class="description__title">Двухчасовая съёмка - 12 000 руб.</h3>
+          <ul class="description__list">
+            <li class="description__item">150 фото в цветокоррекции</li>
+            <li class="description__item">24 фото в ретуши</li>
+          </ul>
+        </article>
+        <article class="description">
+          <h3 class="description__title">Full фотосессия - 13 000 руб.</h3>
+          <ul class="description__list">
+            <li class="description__item">Длительность - 1 час</li>
+            <li class="description__item">Макияж и укладка</li>
+            <li class="description__item">Аренда студии</li>
+            <li class="description__item">80 фото в цветокоррекции</li>
+            <li class="description__item">12 фото в ретуши</li>
+          </ul>
+        </article>
+        <article class="terms">
+          <p class="description__comment">* Стоимость одной дополнительной фотографии - 400 руб.</p>
+          <p class="terms__item">** Аренда апартаментов или студии, услуги визажиста оплачиваются отдельно, если не указано иное.</p>
+          <p class="terms__item">*** Конфиденциальность - Ваши фотографии не будут где-либо опубликованы без Вашего согласия.</p>
+        </article>
+      </div>
+    </section>
+    <section class="order container">
+      <article class="order__form">
+        <form class="form">
+          <h2 class="order__title">Заказать съёмку</h2>
+          <div class="form__wrapper">
+            <label class="form__label" for="city">Город</label>
+            <input class="form__input" type="text" name="city" id="city" required>
+          </div>
+          <div class="form__wrapper">
+            <label class="form__label" for="name">Имя</label>
+            <input class="form__input" type="text" name="name" id="name" required>
+          </div>
+          <div class="form__wrapper">
+            <label class="form__label" for="phone">Телефон</label>
+            <input class="form__input" type="tel" pattern="^((8|\+7|7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$" name="phone" id="phone" required>
+            <!-- телефон в формате 8/7/+71234567890, пробел после кода страны -->
+          </div>
+          <div class="form__wrapper">
+            <label class="form__label" for="textarea">Ваш комментарий</label>
+            <textarea class="form__textarea" placeholder="Хочу съёмку в студии" id="textarea"></textarea>
+          </div>
+          <input class="form__btn" type="submit" name="send" value="отправить" disabled>
+          <p class="form__personal">* Нажимая кнопку отправить, Вы даете <a class="form__personal-link" href="#" target="_blank">согласие на обработку своих персональных данных.</a></p>
+        </form>
+      </article>
+      <article class="order__certificate">
+        <h2 class="order__title">Подарочный сертификат на фотосессию</h2>
+        <p class="order__text"></p>
+        <a class="order__link" href="../img/certificate.jpeg" target="_blank">
+          <img class="order__certificate-img" src="../img/certificate.jpeg" width="350" alt="сертификат на фотосессию">
+        </a>
+      </article>
+    </section>
+  </main>
+  <footer class="page-footer page-footer--portfolio container container--portfolio">
+    <p class="copyright copyright--contacts">
+      created by</br>
+      © <a class="copyright__link" href="http://linadorasheva.ru/" target="_blank">linadorasheva</a>, 2019
+    </p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
